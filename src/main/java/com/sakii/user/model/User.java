@@ -15,23 +15,18 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
-
     private String email;
     private String phone;
     private String passwordHash;
-
     private String name;
     private LocalDate dob;
     private String gender;
     private boolean verified;
-
     private String profilePhotoUrl;
     private String governmentIdUrl;
     private String selfieUrl;
-
     private LocalDate createdAt;
     private LocalDate updatedAt;
-
     @ManyToMany
     @JoinTable(
         name = "user_interests",

@@ -13,6 +13,5 @@ public class Interest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long interestId;
-
     private String interestName;
 } 

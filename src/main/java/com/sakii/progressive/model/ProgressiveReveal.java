@@ -14,12 +14,10 @@ public class ProgressiveReveal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long revealId;
-
     @ManyToOne
     @JoinColumn(name = "session_id")
     private com.sakii.matchmaking.model.Session session;
-
-    private String revealType; // interests, photo, name
+    private String revealType;
     private LocalDateTime revealTime;
     private boolean user1Approved;
     private boolean user2Approved;
